@@ -1,5 +1,68 @@
 body{
   font-family: 'Courier New', sans-serif;
-  font-size: 14px;
-  background: #eee;
+  font-size: 20px;
+}
+
+.title{
+    margin: auto;
+    padding: 10px;
+    font-size: 70px;
+    font-family: 'Ultra';
+    margin-bottom: 30px;
+    background-color: aliceblue;
+}
+.task{
+    margin: 20px;
+    padding: 20px;
+    background-color: #def;
+}
+.caption{
+    font-size: 25px;
+}
+.taskname{
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+
+}
+.taskdetail{
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+.detail-comment{
+    padding: 10px;
+}
+.limit, .tag{
+    padding: 10px;
+    color: blue;
+}
+.bar{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.progress-comment{
+    padding: 10px;
+}
+.bar-right{
+    text-align: right;
+}
+.bar-center{
+    text-align: center;
+    color: blue;
+}
+.bar-left{
+    text-align: left;
+}
+#footer{
+    background-color: aliceblue;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top:30px;
 }
