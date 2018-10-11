@@ -59,6 +59,9 @@ body{
 .bar-left{
     text-align: left;
 }
+.btn{
+    padding: 15px;
+}
 #footer{
     background-color: aliceblue;
     height: 50px;
