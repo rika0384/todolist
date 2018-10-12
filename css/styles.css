@@ -35,7 +35,8 @@ body{
     border-radius: 10px;
 }
 .detail-comment{
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 .limit, .tag{
     padding: 10px;
@@ -47,8 +48,12 @@ body{
     background-color: white;
     border-radius: 10px;
 }
+.progress{
+    margin: 10px;
+}
 .progress-comment{
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 .bar-right{
     text-align: right;
@@ -61,7 +66,18 @@ body{
     text-align: left;
 }
 .btn{
-    padding: 15px;
+    padding: 20px;
+}
+.newtitle{
+    margin: 30px;
+    font-size: 40px;
+    color: pink;
+}
+.newtask{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fcdce0;
+    box-shadow: 5px 5px 5px gray;
 }
 #footer{
     background-color: aliceblue;

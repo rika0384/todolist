@@ -45,19 +45,20 @@
                     </div>
                 </div>
             </div>
-            <div class="container btn">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-info btn-block"> edit </button>
+                    <div class="col-md-6 btn">
+                        <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#modal-edit"> edit </button>
                     </div>
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-info btn-block"> delete </button>
+                    <div class="col-md-6 btn">
+                        <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#modal-delete"> delete </button>
                     </div>
                 </div>
             </div>
         </div>
 
-<!--
+
+
         <div class="task">
             <div class="taskname">AtCoderを1000問解く！</div>
             <div class="container">
@@ -91,8 +92,108 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 btn">
+                        <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#modal-edit"> edit </button>
+                    </div>
+                    <div class="col-md-6 btn">
+                        <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#modal-delete"> delete </button>
+                    </div>
+                </div>
+            </div>
         </div>
--->
+
+<!-- モーダルの中身 -->
+        <div class="modal" id="modal-edit" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+
+                <!-- 3.モーダルのコンテンツ -->
+                <div class="modal-content">
+                    <!-- 4.モーダルのヘッダ -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-label">タスク編集</h4>
+                    </div>
+                    <!-- 5.モーダルのボディ -->
+                    <div class="modal-body">
+                        コンテンツの本文
+                    </div>
+                    <!-- 6.モーダルのフッタ -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+                        <button type="button" class="btn btn-primary">保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-delete" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+
+                <!-- 3.モーダルのコンテンツ -->
+                <div class="modal-content">
+                    <!-- 4.モーダルのヘッダ -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-label">タスク削除</h4>
+                    </div>
+                    <!-- 5.モーダルのボディ -->
+                    <div class="modal-body">
+                        タスクを削除しますか
+                    </div>
+                    <!-- 6.モーダルのフッタ -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+                        <button type="button" class="btn btn-primary">削除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="newtitle">新規作成</div>
+        <div class="newtask">
+            <div style="font-size: 30px;">タスク名</div>
+                <input class="form-control taskname" type="text"></input>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 limit">期限：
+                        <input class="form-control" type="text"></input>
+                    </div>
+                    <div class="col-md-8 tag">タグ：
+                        <input class="form-control" type="text"></input>
+                     </div>
+                </div>
+                <div class="taskdetail">
+                    <div class="caption">詳細</div>
+                    <input class="form-control detail-comment" type="text"></input>
+                </div>
+                <div class="bar">
+                    <div class="caption">進捗状況</div>
+                    <input class="form-control progress-comment" type="text"></input>
+                    <div class="container">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 bar-left">
+                                <input class="form-control" type="text"></input>
+                            </div>
+                            <div class="col-md-4 bar-center">
+                                <input class="form-control" type="text"></input>
+                            </div>
+                            <div class="col-md-4 bar-right">
+                                <input class="form-control" type="text"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <button type="button" class="btn btn-info btn-block">登録</button>
+            </div>
+        </div>
+
+
     </div>
     <div id="footer">All rights reserved</div>
     <script src="js/main.js"></script>
